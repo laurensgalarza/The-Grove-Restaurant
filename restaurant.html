@@ -12,52 +12,198 @@
 <!--Header-->
 <header>
     <!--Logo-->
+    <h3 style="color:floralwhite;font-variant: small-caps;margin-left: 12px;margin-top: 12px; position: fixed; z-index: 3;"> The Grove</h3>
+
     <!--Navigation Bar-->
     <ul>
-    <a style="float:left">
-        <img src="images/The Grove.png" alt="The Grove Logo">
-    </a>   
-    
-    <li><a href="#contact">CONTACT</a></li>
+        
+    <li><a href="#home">HOME</a></li>  
     <li><a href="#menu">MENU</a></li>
-    <li><a href="#about">ABOUT</a></li>
-    <li><a href="#home">HOME</a></li>
+    <li><a href="#about">ABOUT</a></li>      
+    <li><a href="#contact">CONTACT</a></li>
 </ul>
 </header>
 
-    <div class="container" style="min-width: 800px;" id="home">
-       <h2 class="">Home</h2> 
+    <div class="container" id="home" style="justify-content: space-between; background-color: rgb(29, 50, 38);">
         <!--Hero Section-->
-
+        <div class="hero-banner">
+         <h1 style="line-height: 85%;text-shadow:0 2px 2px rgba(0, 0, 0, 0.3); font-size: 6em; color:floralwhite ;margin-bottom: 10px;
+         "> The Grove</h1>
+         <p style="color:floralwhite">Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere porttitor litora imperdiet ligula sociosqu. Scelerisque urna senectus odio dui, sed non pulvinar? Dictum primis maximus malesuada nisl nisi.</p>    
+        <button > Order Now </button>
+        </div>
+       
         <!--Image Gallery-->
-        <div class="gallery">
-            <a href="images/img_1.jpg">
-            <img src="images/img_1.jpg" alt="Caprese Salad" width="600" height="400">
-            </a>
+        <div class="gallery" style="float: right;">
+            <img class="img" src="images/img_1.jpg" alt="Grain Bowl" width="750" height="500">
+            <img class="img" src="images/img_2.jpg" alt="Pasta Dish" width="750" height="500">
+            <img class="img" src="images/img_3.jpg" alt="Pita Bread and Hummus" width="750" height="500">
+            <img class="img" src="images/img_4.jpg" alt="Pasta Dish" width="750" height="500">
+            <img class="img" src="images/img_5.jpg" alt="Caprese Salad" width="750" height="500">
+
         </div>
     </div>
 
 
 
-    <div class="container" style="min-width: 800px;" id="menu">
-        <h2>Menu</h2> 
+    <div class="container" style="flex-direction: column;text-align: center;" id="menu">
+        <h1 style="font-size: 3em; color: rgb(29, 50, 38); text-shadow:0 2px 2px rgba(0, 0, 0, 0.3); ">Menu</h1> 
         <!--Menu-->
+        <table>
+            <tr>
+                <th>Appetizers</th>
+                <th>Sandwiches</th>
+                <th>Drinks</th>
+            </tr> 
+            <tr>
+                <td> 
+                    <p>Crispy, golden phyllo pastries filled with a savory blend of spinach, feta cheese, and fresh herbs, baked to perfection.</p>
+                </p>
+            <h3 style="color: brown;">12.99</h3></td>
+                <td><p> Tender slices of seasoned lamb wrapped in a warm pita with tzatziki sauce, tomatoes, onions, and crisp lettuce.</p>
+            <h3 style="color: brown;">7.99</h3></td>
+                <td><p>A refreshing blend of freshly squeezed lemons, muddled mint leaves, and a hint of honey, served over ice.</p>
+                    <h3 style="color: brown;">10.99</h3></td>
+                </tr>
+            <tr>
+                
+                <td><p> A selection of creamy hummus flavors, including classic, roasted red pepper, and garlic herb, served with warm pita bread.</p>
+                    <h3 style="color: brown;">24.99</h3></td>
+                    <td><p>Crispy, spiced chickpea fritters nestled in a fluffy pita with tahini sauce, fresh cucumbers, and shredded lettuce.</p>
+                        <h3 style="color: brown;">36.99</h3></td>
+                        <td><p>Rich, bold coffee brewed in a traditional cezve and served in a small cup with a side of sweet dates.
+                            <h3 style="color: brown;">27.99</h3></td>
+                        </tr>
+            <tr>
+                <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+                    <h3 style="color: brown;">12.99</h3></td>
+                    <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+                        <h3 style="color: brown;">12.99</h3></td>
+                        <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+                            <h3 style="color: brown;">12.99</h3></td>
+                        </tr>           
+            
+        </table>
+        <table>
+            <tr>
+            <th>Entrees</th>
+            <th>Sides</th>
+            <th>Desserts</th>                
+            </tr>
+            <tr>
+                <td><p>Layers of roasted eggplant, spiced ground beef, and creamy béchamel sauce, baked until golden and bubbly.</p>
+                    <h3 style="color: brown;">12.99</h3></td>
+                    <td><p>A light and zesty mix of parsley, bulgur wheat, tomatoes, cucumbers, and lemon dressing.</p>
+                        <h3 style="color: brown;">12.99</h3></td>
+                        <td><p>Flaky layers of phyllo dough filled with spiced walnuts and drizzled with sweet honey syrup.</p>
+                            <h3 style="color: brown;">12.99</h3></td>
+
+            </tr>
+            <tr>
+                <td><p>Whole sea bass marinated in olive oil, lemon, and fresh herbs, grilled and served with a side of garlic-infused rice.</p><h3 style="color: brown;">12.99</h3></td>
+                </td>
+                <td><p>Crispy oven-roasted potatoes tossed with garlic, olive oil, and fragrant Mediterranean spices.</p><h3 style="color: brown;">12.99</h3></td>
+                </td>
+                <td><p>A creamy, cinnamon-dusted rice pudding made with vanilla and a hint of citrus zest.</p><h3 style="color: brown;">12.99</h3></td>
+                </td>                
+            </tr>
+            <tr>
+                <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Risus suspendisse curae interdum parturient inceptos duis nunc penatibus.</p><h3 style="color: brown;">12.99</h3></td>
+                </td>
+                <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Risus suspendisse curae interdum parturient inceptos duis nunc penatibus.</p><h3 style="color: brown;">12.99</h3></td>
+                </td>
+                <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Risus suspendisse curae interdum parturient inceptos duis nunc penatibus.</p><h3 style="color: brown;">12.99</h3></td>
+                </td>
+            </tr>     
+
+            
+
+        </table>
 
     </div>
 
-    <div class="container" style="min-width: 800px;" id="about">
-        <h2>About</h2> 
+    <div class="container" style="flex-direction: column;text-align: center; background-color: rgba(165, 93, 48, 0.484); color:floralwhite ;" id="about">
+        <div style="max-width: 50vw;">
+        <h2 style="font-size: 3em; text-shadow:0 2px 2px rgba(0, 0, 0, 0.1);">About Us</h2> 
         <!--About Section-->
+        <p style="font-size: large;">The Grove was born in 1993, when we left Greece and came to the United States. We found that cooking kept us connected to our home in the Mediterranean, and decided we must share our cuisine with our new community. Two years after arriving in Brooklyn, we opened up The Grove, inspired by the olive groves from our childhood. Ever since then, we have been honored to share our love of food and the Mediterranean with you.</p>
+
     </div>
+</div>
 
-
-    <div class="container" style="min-width: 800px;" id="contact">
-        <h2>Contact</h2> 
+    <div class="container" style="display:flex; flex-direction: row; justify-content: space-around; max-width: fit-content;" id="contact">
         <!--Contact page-->
-    </div>
+        <!--Map-->
+        <div style="margin: 100px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113523.94517204494!2d-74.02723588434841!3d40.64520216546317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20NY!5e1!3m2!1sen!2sus!4v1742002014399!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+        <!--Contact Form-->
+        <div style="width: 30vw ;background-color:rgb(167, 77, 77); color: floralwhite; margin: 100px; padding: 24px; text-align: center;    border-radius: 5px;
+        ">
+        <h1>Contact</h1> 
+
+        <form>
+            <p>Use this form to get in touch.</p>
+            <label>Name</label>
+            <br/>
+            <input type="text">
+            <br/>
+
+            <label>Email</label>
+            <br/>
+
+
+            <input type="text">
+            <br/>
+
+            <label>Message</label>
+            <br/>
+
+            <input type="text">
+
+            <button type="submit" onclick=""> Submit</button>
+        </form>
+        </div> 
+   </div>
 
     <!--footer-->
+    <footer>
 
+        <div class="container" 
+        style="
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+        width: 100vw;
+        background-color: rgb(29, 50, 38);
+        color: floralwhite;
+        ">
+    <!--Social Media Links-->
+            <div style="
+            display: flex; 
+            flex-direction: column;">
+        <li>
+            <a style="margin: 24px;" href="https://www.instagram.com">Follow us on Instagram</a>
+            <a style="margin: 24px;" href="https://www.facebook.com">Friend us on Facebook</a>
+        </li>
+            </div>
+   <!--business hours-->
+            <div style="
+            display: flex; 
+            flex-direction: column;">
+            <h1>Business Hours</h1>
+            <p>Monday through Friday: 7 AM to 10 PM</p>
+            <p>Saturday: 9 AM to 12 AM</p>
+            <p>Sunday: Closed</p>
+            </div>
+
+    </div>
+    </footer>
+ 
 
 
 
