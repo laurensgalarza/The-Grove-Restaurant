@@ -10,11 +10,12 @@
 
 <body>
 <!--Header-->
-<header>
+<nav>
     <!--Logo-->
     <h3 style="color:floralwhite;font-variant: small-caps;margin-left: 12px;margin-top: 12px; position: fixed; z-index: 3;"> The Grove</h3>
 
     <!--Navigation Bar-->
+
     <ul>
         
     <li><a href="#home">HOME</a></li>  
@@ -22,31 +23,33 @@
     <li><a href="#about">ABOUT</a></li>      
     <li><a href="#contact">CONTACT</a></li>
 </ul>
-</header>
+</nav>
 
-    <div class="container" id="home" style="justify-content: space-between; background-color: rgb(29, 50, 38);">
+    <div class="container" id="home" style="display: flex ; flex-direction: column; background-color: rgb(29, 50, 38);">
+        <div class="row">
         <!--Hero Section-->
-        <div class="hero-banner">
-         <h1 style="line-height: 85%;text-shadow:0 2px 2px rgba(0, 0, 0, 0.3); font-size: 6em; color:floralwhite ;margin-bottom: 10px;
+        <div class="hero-banner column">
+         <h1 style="line-height: 85%;text-shadow:0 2px 2px rgba(0, 0, 0, 0.3); font-size: 6em; color:floralwhite ;margin-bottom: 10px; text-align: center;
          "> The Grove</h1>
          <p style="color:floralwhite">Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere porttitor litora imperdiet ligula sociosqu. Scelerisque urna senectus odio dui, sed non pulvinar? Dictum primis maximus malesuada nisl nisi.</p>    
         <button > Order Now </button>
         </div>
        
         <!--Image Gallery-->
-        <div class="gallery" style="float: right;">
-            <img class="img" src="images/img_1.jpg" alt="Grain Bowl" width="750" height="500">
-            <img class="img" src="images/img_2.jpg" alt="Pasta Dish" width="750" height="500">
-            <img class="img" src="images/img_3.jpg" alt="Pita Bread and Hummus" width="750" height="500">
-            <img class="img" src="images/img_4.jpg" alt="Pasta Dish" width="750" height="500">
-            <img class="img" src="images/img_5.jpg" alt="Caprese Salad" width="750" height="500">
+        <div class="gallery">
+            <img class="img" src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Grain Bowl" width="750" height="500">
+            <img class="img" src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pasta Dish" width="750" height="500">
+            <img class="img" src="https://images.pexels.com/photos/1618898/pexels-photo-1618898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Pita Bread and Hummus" width="750" height="500">
+            <img class="img" src="https://images.pexels.com/photos/10067947/pexels-photo-10067947.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pasta Dish" width="750" height="500">
+            <img class="img" src="https://images.pexels.com/photos/61180/pexels-photo-61180.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Caprese Salad" width="750" height="500">
 
+        </div>
         </div>
     </div>
 
 
 
-    <div class="container" style="flex-direction: column;text-align: center;" id="menu">
+    <div class="container column" style="flex-wrap: wrap; flex-direction: column;" id="menu">
         <h1 style="font-size: 3em; color: rgb(29, 50, 38); text-shadow:0 2px 2px rgba(0, 0, 0, 0.3); ">Menu</h1> 
         <!--Menu-->
         <table>
@@ -194,7 +197,8 @@
    <!--business hours-->
             <div style="
             display: flex; 
-            flex-direction: column;">
+            flex-direction: column;
+            text-align: center">
             <h1>Business Hours</h1>
             <p>Monday through Friday: 7 AM to 10 PM</p>
             <p>Saturday: 9 AM to 12 AM</p>
