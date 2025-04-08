@@ -5,23 +5,23 @@
         <title>The Grove</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="restaurant.css">
+        <link rel="stylesheet" href="restaurant.css?v=2">
     </head>
 
 <body>
 <!--Header-->
 <nav>
-    <!--Logo-->
-    <h3 style="color:floralwhite;font-variant: small-caps;margin-left: 12px;margin-top: 12px; position: fixed; z-index: 3;"> The Grove</h3>
-
-    <!--Navigation Bar-->
 
     <ul>
+        <!--Logo-->
+    <h3 style="color:floralwhite;font-variant: small-caps;margin-left: 12px;margin-top: 12px; z-index: 3;"> The Grove</h3>
         
-    <li><a href="#home">HOME</a></li>  
-    <li><a href="#menu">MENU</a></li>
-    <li><a href="#about">ABOUT</a></li>      
-    <li><a href="#contact">CONTACT</a></li>
+        <!--Navigation Bar-->
+    <li><a href="#home" class="button">HOME</a></li>  
+    <li><a href="#menu" class="button">MENU</a></li>
+    <li><a href="#about" class="button">ABOUT</a></li>    
+    <li><a href="#contact" class="button">CONTACT</a></li>
+
 </ul>
 </nav>
 
@@ -29,19 +29,18 @@
         <div class="row">
         <!--Hero Section-->
         <div class="hero-banner column">
-         <h1 style="line-height: 85%;text-shadow:0 2px 2px rgba(0, 0, 0, 0.3); font-size: 6em; color:floralwhite ;margin-bottom: 10px; text-align: center;
-         "> The Grove</h1>
+         <h1 class="title"> The Grove</h1>
          <p style="color:floralwhite">Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere porttitor litora imperdiet ligula sociosqu. Scelerisque urna senectus odio dui, sed non pulvinar? Dictum primis maximus malesuada nisl nisi.</p>    
         <button > Order Now </button>
         </div>
        
         <!--Image Gallery-->
-        <div class="gallery">
-            <img class="img" src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Grain Bowl" width="750" height="500">
-            <img class="img" src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pasta Dish" width="750" height="500">
-            <img class="img" src="https://images.pexels.com/photos/1618898/pexels-photo-1618898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Pita Bread and Hummus" width="750" height="500">
-            <img class="img" src="https://images.pexels.com/photos/10067947/pexels-photo-10067947.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pasta Dish" width="750" height="500">
-            <img class="img" src="https://images.pexels.com/photos/61180/pexels-photo-61180.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Caprese Salad" width="750" height="500">
+        <div class="gallery column">
+            <img class="img" src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Grain Bowl">
+            <img class="img" src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pasta Dish" width="750">
+            <img class="img" src="https://images.pexels.com/photos/1618898/pexels-photo-1618898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Pita Bread and Hummus">
+            <img class="img" src="https://images.pexels.com/photos/10067947/pexels-photo-10067947.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Pasta Dish">
+            <img class="img" src="https://images.pexels.com/photos/61180/pexels-photo-61180.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Caprese Salad">
 
         </div>
         </div>
@@ -50,13 +49,11 @@
 
 
     <div class="container column" style="flex-wrap: wrap; flex-direction: column;" id="menu">
-        <h1 style="font-size: 3em; color: rgb(29, 50, 38); text-shadow:0 2px 2px rgba(0, 0, 0, 0.3); ">Menu</h1> 
+        <h1 style="font-size: 4em; color: rgb(29, 50, 38); text-shadow:0 2px 2px rgba(0, 0, 0, 0.3); align-self:flex-end; margin: 24px">Menu</h1> 
         <!--Menu-->
         <table>
             <tr>
                 <th>Appetizers</th>
-                <th>Sandwiches</th>
-                <th>Drinks</th>
             </tr> 
             <tr>
                 <td> 
@@ -68,6 +65,10 @@
                 <td><p>A refreshing blend of freshly squeezed lemons, muddled mint leaves, and a hint of honey, served over ice.</p>
                     <h3 style="color: brown;">10.99</h3></td>
                 </tr>
+
+            <tr>
+                <th>Sandwiches</th>
+            </tr> 
             <tr>
                 
                 <td><p> A selection of creamy hummus flavors, including classic, roasted red pepper, and garlic herb, served with warm pita bread.</p>
@@ -77,6 +78,9 @@
                         <td><p>Rich, bold coffee brewed in a traditional cezve and served in a small cup with a side of sweet dates.
                             <h3 style="color: brown;">27.99</h3></td>
                         </tr>
+            <tr>
+                <th>Drinks</th>
+            </tr> 
             <tr>
                 <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
                     <h3 style="color: brown;">12.99</h3></td>
@@ -88,11 +92,10 @@
             
         </table>
         <table>
+
             <tr>
-            <th>Entrees</th>
-            <th>Sides</th>
-            <th>Desserts</th>                
-            </tr>
+                <th>Entrees</th>
+            </tr>             
             <tr>
                 <td><p>Layers of roasted eggplant, spiced ground beef, and creamy béchamel sauce, baked until golden and bubbly.</p>
                     <h3 style="color: brown;">12.99</h3></td>
@@ -103,6 +106,9 @@
 
             </tr>
             <tr>
+                <th>Sides</th>
+            </tr> 
+            <tr>
                 <td><p>Whole sea bass marinated in olive oil, lemon, and fresh herbs, grilled and served with a side of garlic-infused rice.</p><h3 style="color: brown;">12.99</h3></td>
                 </td>
                 <td><p>Crispy oven-roasted potatoes tossed with garlic, olive oil, and fragrant Mediterranean spices.</p><h3 style="color: brown;">12.99</h3></td>
@@ -110,6 +116,9 @@
                 <td><p>A creamy, cinnamon-dusted rice pudding made with vanilla and a hint of citrus zest.</p><h3 style="color: brown;">12.99</h3></td>
                 </td>                
             </tr>
+            <tr>
+                <th>Desserts</th>
+            </tr> 
             <tr>
                 <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Risus suspendisse curae interdum parturient inceptos duis nunc penatibus.</p><h3 style="color: brown;">12.99</h3></td>
                 </td>
@@ -208,11 +217,6 @@
     </div>
     </footer>
  
-
-
-
-
-
 
 
 </body>
