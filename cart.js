@@ -63,6 +63,8 @@ function addToCart(name, price){
     }
     //update cart
     updateCart();
+
+    document.getElementById("cart").scrollIntoView({behavior: "smooth", block: "center"});
 }
 
 
