@@ -26,12 +26,12 @@
 </nav>
 
     <div class="container" id="home" style="display: flex ; flex-direction: column; background-color: rgb(29, 50, 38);">
-        <div class="row">
+
         <!--Hero Section-->
         <div class="hero-banner column">
          <h1 class="title"> The Grove</h1>
-         <p style="color:floralwhite">Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere porttitor litora imperdiet ligula sociosqu. Scelerisque urna senectus odio dui, sed non pulvinar? Dictum primis maximus malesuada nisl nisi.</p>    
-        <button > Order Now </button>
+         <p style="color:floralwhite; max-width: 1000px; padding-inline: 48px;">Lorem ipsum odor amet, consectetuer adipiscing elit. Posuere porttitor litora imperdiet ligula sociosqu. Scelerisque urna senectus odio dui, sed non pulvinar? Dictum primis maximus malesuada nisl nisi.</p>    
+        <button class="open-cart" style="width: fit-content; padding-inline: 100px; align-self: center;"> Order Now </button>
         </div>
        
         <!--Image Gallery-->
@@ -43,107 +43,115 @@
             <img class="img" src="https://images.pexels.com/photos/61180/pexels-photo-61180.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Caprese Salad">
 
         </div>
+  
+    </div>
+
+    <div class="container" style="flex-wrap: wrap; flex-direction: column;" id="menu">
+
+
+            <h1 style="font-size: 4em; color: rgb(29, 50, 38); text-shadow:0 2px 2px rgba(0, 0, 0, 0.3); align-self:center; margin: 24px">Menu</h1> 
+        
+ 
+        <!--Menu-->
+
+        <h2 class="menu-section-title">Appetizers</h2>
+        <div class="menu-section">
+            <div class="menu-item" data-name="Spanakopita" data-price="12.99">
+            <p>Crispy, golden phyllo pastries filled with a savory blend of spinach, feta cheese, and fresh herbs, baked to perfection.</p>
+            <div class="item-footer">
+                <h3>12.99</h3>
+            <button class="add-to-cart">+</button>
+            </div>
+            </div>
+
+            <div class="menu-item" data-name="Lamb Gyro" data-price="12.99">
+            <p>Tender slices of seasoned lamb wrapped in a warm pita with tzatziki sauce, tomatoes, onions, and crisp lettuce.</p>
+            <div class="item-footer">
+                <h3>12.99</h3>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+    </div>
+        <h2 class="menu-section-title">Sandwiches</h2>
+        <div class="menu-section">
+            <div class="menu-item" data-name="Falafel Pita" data-price="36.99">
+            <p>Crispy, spiced chickpea fritters nestled in a fluffy pita with tahini sauce, fresh cucumbers, and shredded lettuce.</p>
+            <div class="item-footer">
+                <h3>36.99</h3>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+            <div class="menu-item" data-name="Lamb Pita Wrap" data-price="12.99">
+            <p>Slow-roasted lamb slices wrapped in a pita with tzatziki, cucumbers, tomatoes, and fresh greens.
+            </p>
+            <div class="item-footer">
+                <h3>12.99</h3>
+                <button class="add-to-cart">+</button>
+            </div>
         </div>
     </div>
 
+        <h2 class="menu-section-title">Entrees</h2>
+        <div class="menu-section">
+            <div class="menu-item" data-name="Moussaka" data-price="26.99">
+            <p>Layers of eggplant, spiced ground beef, and creamy béchamel sauce, oven-baked to perfection.</p>
+            <div class="item-footer">
+                <h3>26.99</h3>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+            <div class="menu-item" data-name="Grilled Chicken Souvlaki" data-price="16.99">
+            <p>Skewered and char-grilled chicken breast marinated in lemon, garlic, and oregano, served over rice pilaf.
+            </p>
+            <div class="item-footer">
+                <h3>16.99</h3>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+    </div>
+        <h2 class="menu-section-title">Drinks</h2>
+        <div class="menu-section">
+            <div class="menu-item" data-name="Mint Lemonade" data-price="6.99">
+            <p>Freshly squeezed lemons muddled with mint leaves and lightly sweetened, served chilled over ice.</p>
+            <div class="item-footer">
+                <h3>6.99</h3>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+            <div class="menu-item" data-name="Turkish Coffee" data-price="6.99">
+            <p>Bold and rich coffee brewed in a cezve and served with a touch of cardamom, accompanied by a sweet date.
+            </p>
+            <div class="item-footer">
+                <h3>6.99</h3>
+                <button class="add-to-cart">+</button>
+            </div>
+        </div>
+    </div>
+    
 
+    <!--Cart-->
+    <div id="cart">
+        <h2>Your Cart</h2>
 
-    <div class="container column" style="flex-wrap: wrap; flex-direction: column;" id="menu">
-        <h1 style="font-size: 4em; color: rgb(29, 50, 38); text-shadow:0 2px 2px rgba(0, 0, 0, 0.3); align-self:flex-end; margin: 24px">Menu</h1> 
-        <!--Menu-->
-        <table>
-            <tr>
-                <th>Appetizers</th>
-            </tr> 
-            <tr>
-                <td> 
-                    <p>Crispy, golden phyllo pastries filled with a savory blend of spinach, feta cheese, and fresh herbs, baked to perfection.</p>
-                </p>
-            <h3 style="color: brown;">12.99</h3></td>
-                <td><p> Tender slices of seasoned lamb wrapped in a warm pita with tzatziki sauce, tomatoes, onions, and crisp lettuce.</p>
-            <h3 style="color: brown;">7.99</h3></td>
-                <td><p>A refreshing blend of freshly squeezed lemons, muddled mint leaves, and a hint of honey, served over ice.</p>
-                    <h3 style="color: brown;">10.99</h3></td>
-                </tr>
-
-            <tr>
-                <th>Sandwiches</th>
-            </tr> 
-            <tr>
-                
-                <td><p> A selection of creamy hummus flavors, including classic, roasted red pepper, and garlic herb, served with warm pita bread.</p>
-                    <h3 style="color: brown;">24.99</h3></td>
-                    <td><p>Crispy, spiced chickpea fritters nestled in a fluffy pita with tahini sauce, fresh cucumbers, and shredded lettuce.</p>
-                        <h3 style="color: brown;">36.99</h3></td>
-                        <td><p>Rich, bold coffee brewed in a traditional cezve and served in a small cup with a side of sweet dates.
-                            <h3 style="color: brown;">27.99</h3></td>
-                        </tr>
-            <tr>
-                <th>Drinks</th>
-            </tr> 
-            <tr>
-                <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-                    <h3 style="color: brown;">12.99</h3></td>
-                    <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-                        <h3 style="color: brown;">12.99</h3></td>
-                        <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
-                            <h3 style="color: brown;">12.99</h3></td>
-                        </tr>           
-            
-        </table>
-        <table>
-
-            <tr>
-                <th>Entrees</th>
-            </tr>             
-            <tr>
-                <td><p>Layers of roasted eggplant, spiced ground beef, and creamy béchamel sauce, baked until golden and bubbly.</p>
-                    <h3 style="color: brown;">12.99</h3></td>
-                    <td><p>A light and zesty mix of parsley, bulgur wheat, tomatoes, cucumbers, and lemon dressing.</p>
-                        <h3 style="color: brown;">12.99</h3></td>
-                        <td><p>Flaky layers of phyllo dough filled with spiced walnuts and drizzled with sweet honey syrup.</p>
-                            <h3 style="color: brown;">12.99</h3></td>
-
-            </tr>
-            <tr>
-                <th>Sides</th>
-            </tr> 
-            <tr>
-                <td><p>Whole sea bass marinated in olive oil, lemon, and fresh herbs, grilled and served with a side of garlic-infused rice.</p><h3 style="color: brown;">12.99</h3></td>
-                </td>
-                <td><p>Crispy oven-roasted potatoes tossed with garlic, olive oil, and fragrant Mediterranean spices.</p><h3 style="color: brown;">12.99</h3></td>
-                </td>
-                <td><p>A creamy, cinnamon-dusted rice pudding made with vanilla and a hint of citrus zest.</p><h3 style="color: brown;">12.99</h3></td>
-                </td>                
-            </tr>
-            <tr>
-                <th>Desserts</th>
-            </tr> 
-            <tr>
-                <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Risus suspendisse curae interdum parturient inceptos duis nunc penatibus.</p><h3 style="color: brown;">12.99</h3></td>
-                </td>
-                <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Risus suspendisse curae interdum parturient inceptos duis nunc penatibus.</p><h3 style="color: brown;">12.99</h3></td>
-                </td>
-                <td><p>Lorem ipsum odor amet, consectetuer adipiscing elit. Risus suspendisse curae interdum parturient inceptos duis nunc penatibus.</p><h3 style="color: brown;">12.99</h3></td>
-                </td>
-            </tr>     
-
-            
-
-        </table>
+        <ul id="cart-items"></ul>
+        <p>total: $ <span id="cart-total">0.00</span></p>
+        <button id="clear-cart">Clear Cart</button>
 
     </div>
+    </div>
 
-    <div class="container" style="flex-direction: column;text-align: center; background-color: rgba(165, 93, 48, 0.484); color:floralwhite ;" id="about">
+    
+
+    <div class="container" style="flex-direction: column;text-align: center; background-color: rgb(29, 50, 38, 0.5); color:rgb(29, 50, 38) ;" id="about">
         <div style="max-width: 50vw;">
-        <h2 style="font-size: 3em; text-shadow:0 2px 2px rgba(0, 0, 0, 0.1);">About Us</h2> 
+        <h2 style="font-size: 3em; text-shadow:0 2px 2px rgba(0, 0, 0, 0.1); color: floralwhite;">About Us</h2> 
         <!--About Section-->
         <p style="font-size: large;">The Grove was born in 1993, when we left Greece and came to the United States. We found that cooking kept us connected to our home in the Mediterranean, and decided we must share our cuisine with our new community. Two years after arriving in Brooklyn, we opened up The Grove, inspired by the olive groves from our childhood. Ever since then, we have been honored to share our love of food and the Mediterranean with you.</p>
 
     </div>
 </div>
 
-    <div class="container" style="display:flex; flex-direction: row; justify-content: space-around; max-width: fit-content;" id="contact">
+    <div class="container" style="display:flex; flex-direction: column; justify-content: space-around;" id="contact">
         <!--Contact page-->
         <!--Map-->
         <div style="margin: 100px;">
@@ -151,8 +159,7 @@
 
         </div>
         <!--Contact Form-->
-        <div style="width: 30vw ;background-color:rgb(167, 77, 77); color: floralwhite; margin: 100px; padding: 24px; text-align: center;    border-radius: 5px;
-        ">
+        <div style=" color: rgb(29, 50, 38); padding: 24px; text-align: center;">
         <h1>Contact</h1> 
 
         <form>
@@ -165,8 +172,7 @@
             <label>Email</label>
             <br/>
 
-
-            <input type="text">
+            <input type="email">
             <br/>
 
             <label>Message</label>
@@ -198,16 +204,17 @@
             <div style="
             display: flex; 
             flex-direction: column;">
-        <li>
-            <a style="margin: 24px;" href="https://www.instagram.com">Follow us on Instagram</a>
-            <a style="margin: 24px;" href="https://www.facebook.com">Friend us on Facebook</a>
+        <li style="
+        display: flex; 
+        flex-direction: column;">
+            <a style="margin: 6px;" href="https://www.instagram.com">Follow us on Instagram</a>
+            <a style="margin: 6px;" href="https://www.facebook.com">Friend us on Facebook</a>
         </li>
             </div>
    <!--business hours-->
             <div style="
             display: flex; 
-            flex-direction: column;
-            text-align: center">
+            flex-direction: column;">
             <h1>Business Hours</h1>
             <p>Monday through Friday: 7 AM to 10 PM</p>
             <p>Saturday: 9 AM to 12 AM</p>
@@ -218,7 +225,7 @@
     </footer>
  
 
-
+<script src="cart.js"></script>
 </body>
 
 </html>
