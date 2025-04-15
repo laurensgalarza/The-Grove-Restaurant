@@ -237,6 +237,6 @@ button.remove-from-cart::after{
         width: 100%;
     }
     #cart{
-        position: sticky;
+        position: static;
     }
 }
