@@ -16,6 +16,8 @@ nav{
     top: 0;
     width: 100%;
     z-index: 2;
+    background-color: rgb(29, 50, 38);
+    overflow-x: scroll;
 
 }
 body{
@@ -41,7 +43,6 @@ ul {
     list-style-type: none;
     
     background-color: rgb(29, 50, 38);
-    overflow-x: scroll;
 }
 
 li{
