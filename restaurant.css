@@ -173,7 +173,7 @@ button.add-to-cart::after{
 }
 
 #cart{
-    position: sticky;
+    position: relative;
     text-align: center;
     top: 56px;
     right: 12px;
