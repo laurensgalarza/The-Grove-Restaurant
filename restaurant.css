@@ -236,4 +236,7 @@ button.remove-from-cart::after{
     .column{
         width: 100%;
     }
+    #cart{
+        position: relative;
+    }
 }
