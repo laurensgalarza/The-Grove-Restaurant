@@ -79,6 +79,7 @@ button:hover{
     flex-wrap: wrap;
     gap: 1em;
     margin-bottom: 2em;
+    justify-content: center;
 }
 .menu-item{
     width: 200px;
