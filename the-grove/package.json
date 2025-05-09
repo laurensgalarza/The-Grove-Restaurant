@@ -2,11 +2,14 @@
   "name": "the-grove",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://laurensgalarza.github.io/The-Grove-Restaurant",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "next build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "15.3.1",
@@ -16,6 +19,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.3",
     "tailwindcss": "^4.1.5"
   }

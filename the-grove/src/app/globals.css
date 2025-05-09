@@ -83,7 +83,7 @@ button:hover{
   justify-content: center;
 }
 .menu-item{
-  width: 200px;
+  width: 300px;
   border: 1px solid rgb(29, 50, 38);
   border-radius: 10px;
   padding: 1em;
@@ -125,7 +125,6 @@ button:hover{
   align-items: center;
   display: flex;
   width: 100%;
-  margin: 0 16px;
   padding: 24px;
 }
 
@@ -197,7 +196,7 @@ button.add-to-cart::after{
   text-align: center;
   top: 56px;
   right: 12px;
-  min-width: fit-content;
+  width: 200px;
   height: fit-content;
   padding: 12px;
   box-shadow: 0 2px 2px rgba(29, 50, 38, 0.1);;
@@ -240,7 +239,7 @@ button.cart{
   background-color: transparent;
   color: rgb(29, 50, 38);
   padding: 5px;
-  margin-inline: 12px;
+  margin: 5px;
   border: 1px solid rgb(29, 50, 38,0.3);
   cursor: pointer;
 
