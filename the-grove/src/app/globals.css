@@ -58,7 +58,7 @@ li a{
   
 }
 li a:hover{
-  background-color:rgba(128, 128, 128, 0.5);
+  font-weight: bold;
 
 }
 
@@ -94,6 +94,10 @@ button:hover{
 
 }
 
+.menu-item:hover{
+  border: 2px solid rgb(29, 50, 38);
+}
+
 .item-footer{
   display: flex;
   justify-content: space-between;
@@ -116,6 +120,7 @@ button:hover{
   max-width: 50%;
 
 }
+
 .container{ 
   align-items: center;
   display: flex;
@@ -145,6 +150,20 @@ button:hover{
 
   align-self: flex-start;
 }
+
+.footer{
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  width: 100vw;
+  background-color: rgb(29, 50, 38);
+  color: floralwhite;
+  flex-wrap: wrap;
+}
+
 input{
   width: 100%;
   height: 24px;
@@ -178,20 +197,24 @@ button.add-to-cart::after{
   text-align: center;
   top: 56px;
   right: 12px;
-  min-width: 200px;
+  min-width: fit-content;
   height: fit-content;
   padding: 12px;
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 2px rgba(29, 50, 38, 0.1);;
   border: 2px;
   z-index: inherit;
+  color: rgba(29, 50, 38);
+  background-color: rgba(183, 175, 160, 0.3) ;
+  border-radius: 10px;
 
 }
 
 #cart-items{
-  background-color: transparent;
-  margin: 12px;
+  background-color: rgba(29, 50, 38,0.2);
+  padding: 2px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  color: black;
 }
 
 button.remove-from-cart{
@@ -205,16 +228,23 @@ button.remove-from-cart{
 }
 
 button.remove-from-cart:hover{
-  background-color: rgba(29, 50, 38, 0.2);
+  font-size: large;
 }
 
 button.remove-from-cart::after{
-  background-color: rgba(29, 50, 38, 0.5);
+  font-size: smaller;
 }
 
+button.cart{
+  max-width: fit-content;
+  background-color: transparent;
+  color: rgb(29, 50, 38);
+  padding: 5px;
+  margin-inline: 12px;
+  border: 1px solid rgb(29, 50, 38,0.3);
+  cursor: pointer;
 
-
-
+}
 
 @media (max-width: 600px) {
   .hero-banner{
