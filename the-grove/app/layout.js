@@ -16,11 +16,12 @@ export const metadata = {
 };
 
 export const viewport = {
-  
+  width:"devide-width",
+  initialScale: 1
 }
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="font-serif bg-[#b7afa0] flex flex-wrap overflow-x-hidden">
+    <html lang="en" className="font-serif bg-[#b7afa0] flex flex-wrap overflow-x-hidden scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

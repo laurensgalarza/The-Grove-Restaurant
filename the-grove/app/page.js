@@ -25,7 +25,7 @@ return(
 
     <div className="flex flex-col flex-wrap items-center bg-[#b7afa0] text-[#1d3226] p-6" id="menu">
     
-      <h1 className="text-[5em] text-[#1d32267a] text-center drop-shadow mb-6">Menu</h1> 
+      <h1 className="text-[5em] text-[#1d32267a] text-center drop-shadow mb-6 ">Menu</h1> 
 
       <MenuAndCart/>
 

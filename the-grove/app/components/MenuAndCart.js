@@ -78,7 +78,7 @@ export default function MenuAndCart() {
                 <button className="text-[#1d3226] border border-[#1d3226] border-opacity-30 px-3 py-1 text-sm rounded hover:bg-[floralwhite]">
                     Checkout</button>
                 <button className="text-[#1d3226] border border-[#1d3226] border-opacity-30 px-3 py-1 text-sm rounded hover:bg-[floralwhite]"
-                 onClick={clearCart}>Clear Cart</button>
+                    onClick={clearCart}>Clear Cart</button>
                 </div>
         </div>
         )}

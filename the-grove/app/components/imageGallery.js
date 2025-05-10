@@ -12,11 +12,11 @@ export default function Gallery() {
       ]
     
     return(
-<div className="w-full overflow-x-hidden">
-<div className="flex overflow-x-auto whitespace-nowrap scroll-snap-x mandatory snap-x">
+<div className="w-full overflow-x-hidden mt-0">
+<div className="flex overflow-x-scroll whitespace-nowrap scroll-snap-x mandatory snap-center">
 {imageGallery.map(({img, text}, index) => (
-  <div key={index} className="m-8 snap-start">
-<Image src={img} alt={text} width={750} height={500}  className="max-w-[100%] object-cover"/>
+  <div key={index} className="m-8 snap-start shrink-0 w-[500] mt-0">
+<Image src={img} alt={text} width={500} height={300}  className="w-full h-auto object-cover shrink-0"/>
 </div>
 ))}
 </div>
