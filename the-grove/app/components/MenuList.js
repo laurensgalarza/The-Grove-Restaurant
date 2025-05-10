@@ -37,9 +37,9 @@ export default function MenuList({addToCart}) {
     <div className="flex flex-col w-full">
         {menu.map(({section, items}, sect_index) => (
             <div key={sect_index}>
-                <h2 className="text-3xl font-semibold text-[#1d3226] m-4">{section}</h2>
+                <h2 className="text-3xl font-semibold text-[#1d3226] m-4 md:self-center">{section}</h2>
 
-                <div className="flex flex-wrap justify-center gap-4">
+                <div className="flex flex-wrap justify-center gap-4 mb-12">
                 {items.map((item, item_index) => (
                     <div key={item_index} className="w-[300px] p-4 border border-[#1d3226] rounded-lg bg-[rgba(29, 50, 38, 0.1)] hover:border-2 transition-all" data-name={item.name} data-price={item.price}>
                         <h3 className="text-lg font-medium">{item.name}</h3>

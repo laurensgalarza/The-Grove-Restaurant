@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import { useState } from "react";
-import MenuList from "./MenuList";
+import MenuList from "./menuList";
 
 export default function MenuAndCart() {
 
