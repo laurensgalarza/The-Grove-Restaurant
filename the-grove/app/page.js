@@ -3,7 +3,7 @@ import Image from "next/image";
 import NavBar from "./components/navbar";
 import Hero from "./components/heroSection";
 import Gallery from "./components/imageGallery";
-import MenuAndCart from "./components/menuAndCart";
+import MenuAndCart from "./components/MenuAndCart";
 import About from "./components/about";
 import Contact from "./components/contact";
 import Footer from "./components/footer";
