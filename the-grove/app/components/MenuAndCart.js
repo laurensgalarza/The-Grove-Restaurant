@@ -60,22 +60,26 @@ export default function MenuAndCart() {
     }
 
     return(
-        <div id="menu">
+        <div id="menu" className="relative">
             <MenuList addToCart={addToCart}/>
         {showCart && (
-            <div id="cart">
-                <h2>Your Cart</h2>
+            <div id="cart" className="fixed top-14 right-3 w-52 p-3 z-10 bg-[#b7afa0] bg-opacity-30 text-[#1d3226] rounded-lg shadow-md space-y-2">
+                <h2 className="text-lg font-semibold text-center">Your Cart</h2>
 
-                <ol className="column" >{cart.map((item, index) => 
-                    <a id="cart-items" key={index}>
-                        <p>{item.name}<span> x {item.quantity}</span></p>
-                        <button className="remove-from-cart" onClick={() => removeFromCart(item.name)}>-</button>
+                <ol className="flex flex-col gap-1">{cart.map((item, index) => 
+                    <a id="cart-items" key={index} className="flex justify-between items-center bg-[#1d322633] px-2 py-1 text-black rounded">
+                        <p className="text-sm">{item.name}<span className="ml-1"> x {item.quantity}</span></p>
+                        <button className="text-[#1d3226] hover:text-lg transition" onClick={() => removeFromCart(item.name)}>-</button>
                     </a>)}
                 </ol>
-                <p style={{color: "black"}}>Total: $<span>{updateTotal()}</span></p>
-                <button className="cart">Checkout</button>
-                <button className="cart" onClick={clearCart}>Clear Cart</button>
+                <p className="text-black text-sm text-center">Total: $<span>{updateTotal()}</span></p>
                 
+                <div className="flex flex-col items-center gap-2">
+                <button className="text-[#1d3226] border border-[#1d3226] border-opacity-30 px-3 py-1 text-sm rounded hover:bg-[floralwhite]">
+                    Checkout</button>
+                <button className="text-[#1d3226] border border-[#1d3226] border-opacity-30 px-3 py-1 text-sm rounded hover:bg-[floralwhite]"
+                 onClick={clearCart}>Clear Cart</button>
+                </div>
         </div>
         )}
     </div>)

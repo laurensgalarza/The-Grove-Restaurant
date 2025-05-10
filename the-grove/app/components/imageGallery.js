@@ -12,12 +12,13 @@ export default function Gallery() {
       ]
     
     return(
-
-<div className="gallery column">
+<div className="w-full overflow-x-hidden">
+<div className="flex overflow-x-auto whitespace-nowrap scroll-snap-x mandatory snap-x">
 {imageGallery.map(({img, text}, index) => (
-
-<Image key={index} className="img" src={img} alt={text} width={500} height={300}/>
+  <div key={index} className="m-8 snap-start">
+<Image src={img} alt={text} width={750} height={500}  className="max-w-[100%] object-cover"/>
+</div>
 ))}
 </div>
-
+</div>
     )}

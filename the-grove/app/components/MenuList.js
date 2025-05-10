@@ -34,20 +34,20 @@ export default function MenuList({addToCart}) {
 
 
 
-    <div className="column">
+    <div className="flex flex-col w-full">
         {menu.map(({section, items}, sect_index) => (
             <div key={sect_index}>
-                <h2 className="menu-section-title">{section}</h2>
+                <h2 className="text-3xl font-semibold text-[#1d3226] m-4">{section}</h2>
 
-                <div className="menu-section">
+                <div className="flex flex-wrap justify-center gap-4">
                 {items.map((item, item_index) => (
-                    <div key={item_index} className="menu-item" data-name={item.name} data-price={item.price}>
-                        <h3>{item.name}</h3>
-                        <p>{item.description}</p>
+                    <div key={item_index} className="w-[300px] p-4 border border-[#1d3226] rounded-lg bg-[rgba(29, 50, 38, 0.1)] hover:border-2 transition-all" data-name={item.name} data-price={item.price}>
+                        <h3 className="text-lg font-medium">{item.name}</h3>
+                        <p className="text-sm my-2 ">{item.description}</p>
                         
-                        <div className="item-footer">
-                            <h3>{item.price}</h3>
-                            <button className="add-to-cart" onClick={() => addToCart(item.name, item.price)}>+</button>
+                        <div className="flex justify-between items-center mt-4">
+                            <h3 className="font-semibold">{item.price}</h3>
+                            <button className="text-[#1d3226] px-2 py-1 hover:bg-[#1d322633] rounded transition" onClick={() => addToCart(item.name, item.price)}>+</button>
                         </div>
                     </div>
                     
