@@ -17,16 +17,16 @@ The Grove is a project created for my Intro to Web Development course. There wer
    
 ---
 
-## Final Tech Stack
+## Tech Stack
 
 - **Framework:** Next.js
-- **Styling:** Tailwind CSS
-- **Language:** JavaScript, React (JSX)
+- **Styling:** Tailwind CSS for React app, standard CSS for HTML site
+- **Language:** JavaScript, React (JSX), HTML
 - **Deployment:** Vercel
 
 ---
 
-## Development Setup
+## Running the Project
 
 ```bash
 git clone https://github.com/laurensgalarza/The-Grove-Restaurant.git
